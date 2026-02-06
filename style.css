@@ -6,7 +6,7 @@
 body {
   background-color: aliceblue;
   text-align: center;
-  color: navy;
+  color: rgb(7, 40, 129);
   margin: auto;
   font-family: water;
 }
@@ -16,7 +16,7 @@ h1{
 }
 
 #myCanvas {
-  background-color:rgb(146, 220, 255)
+  background-color:rgb(176, 210, 255)
   background-size: 600px 400px;
   border-radius: 300px;
   border: 5px solid rgb(60, 82, 122);
