@@ -11,13 +11,20 @@ setup = function() {
   //draw sand 2
   fill(227, 213, 170);
   noStroke();
-  ellipse(400, )
+  ellipse(400, 440, 590, 190);
   
   
     
     drawOctopus(150, 300); 
+
     drawShark(400, 150);
+
     drawBubbles(80, 100);
+    drawBubbles(400, 300);
+    
+    drawFish(300, 190);
+    drawFish(30, 170);
+    drawFish()
 };
 
 //🟢draw Function - will run on repeat
@@ -48,6 +55,12 @@ var drawBubbles = function(bubX, bubY){
   fill(194, 234, 252)
   textSize(70);
   text(".°•", bubX, bubY);
+};
+
+// draw fish function
+var drawFish = function(fishX, fishY){
+  textSize(50);
+  text("🐟", fishX, fishY);
 };
 
   
