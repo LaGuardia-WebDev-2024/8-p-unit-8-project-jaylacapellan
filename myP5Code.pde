@@ -1,7 +1,14 @@
 //🟢setup Function - will run once
 setup = function() {
     size(600, 400);
-    background(146, 220, 255);
+    
+
+};
+
+//🟢draw Function - will run on repeat
+draw = function(){
+background(146, 220, 255);
+
 
   //draw sand
   fill(217, 197, 137);
@@ -13,7 +20,7 @@ setup = function() {
   noStroke();
   ellipse(400, 440, 590, 190);
   
-  
+
     
     drawOctopus(150, 300); 
 
@@ -24,11 +31,9 @@ setup = function() {
     
     drawFish(300, 190);
     drawFish(30, 170);
-    drawFish()
-};
+    drawFish(200, 120);
 
-//🟢draw Function - will run on repeat
-draw = function(){
+    drawGrow(mouseX, mouseY);
 
 };
 
@@ -61,6 +66,12 @@ var drawBubbles = function(bubX, bubY){
 var drawFish = function(fishX, fishY){
   textSize(50);
   text("🐟", fishX, fishY);
+};
+
+// draw grow fish function
+var drawGrow = function(growX, growY){
+  textSize(50);
+  text("🐡", growX, growY);
 };
 
   
